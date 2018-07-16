@@ -1,0 +1,28 @@
+#mainbox{
+    height: 700px;
+    width: 500px;
+    background-color: red;
+    border-top-left-radius:35px;
+    border-top-right-radius: 35px;
+    #nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      
+      }
+      #big-dot{
+  
+        border-radius: 50%;
+        background-color: aqua;
+        height: 60px;
+        width: 60px;
+      }
+      .dot.two{
+        background-color: orange;
+      }
+      .dot.three{
+        background-color: greenyellow;
+      }
+       
+    
+  }

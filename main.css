@@ -1,3 +1,21 @@
-
+#mainbox {
+  height: 700px;
+  width: 500px;
+  background-color: red;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px; }
+  #mainbox #nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; }
+  #mainbox #big-dot {
+    border-radius: 50%;
+    background-color: aqua;
+    height: 60px;
+    width: 60px; }
+  #mainbox .dot.two {
+    background-color: orange; }
+  #mainbox .dot.three {
+    background-color: greenyellow; }
 
 /*# sourceMappingURL=main.css.map */
