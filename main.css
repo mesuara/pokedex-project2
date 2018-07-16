@@ -3,12 +3,17 @@ body {
   margin: auto;
   margin-top: 100px; }
 
+#main {
+  display: flex;
+  flex-direction: row; }
+
 #mainbox {
   height: 700px;
   width: 500px;
   background-color: red;
   border-top-left-radius: 35px;
-  border-top-right-radius: 35px; }
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px; }
   #mainbox #nav {
     display: flex;
     justify-content: space-around;
@@ -71,6 +76,33 @@ img {
   width: 150px;
   height: 60px;
   border-radius: 10px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-left: 100px; }
+
+#secondbox {
+  height: 700px;
+  width: 500px;
+  background-color: red;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px; }
+  #secondbox #text {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    width: 360px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 110px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border-bottom-right-radius: 70px 90px; }
+  #secondbox #showAll {
+    background-color: green;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 110px;
+    margin-left: 200px; }
 
 /*# sourceMappingURL=main.css.map */
