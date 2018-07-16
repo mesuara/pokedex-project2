@@ -34,3 +34,55 @@
        
     
   }
+
+  img{
+    width: 190px;
+    height: 300px;
+  }
+  #mainImg{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    width: 360px;
+    height: 300px;
+    margin-left: 60px;
+    margin-top: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border-bottom-left-radius: 70px 90px; 
+  }
+  #btn{
+    display: flex;
+    #btnBlack{
+        border-radius: 50%;
+        background-color: black;
+        height: 40px;
+        width: 40px;
+         margin-left: 50px;
+         margin-top: 10px;
+      
+      }
+      #btnYellow{
+        background-color: yellow;
+        width: 70px;
+        height: 20px;
+        border-radius: 20px;
+        margin-left: 60px;
+        
+        }
+        #btnPink{
+            background-color: pink;
+            width: 70px;
+            height: 20px;
+            border-radius: 20px;
+            margin-left: 80px;
+           }
+  }
+
+  #btnStart{
+    background-color: green;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 60px;
+   }
