@@ -115,7 +115,7 @@ img {
   100% {
     transform: rotate(360deg); } }
 #img.anime {
-  animation: ballMoving 1s infinite; }
+  animation: ballMoving 3s infinite; }
 
 #pokemon {
   font-family: 'Roboto Mono', monospace;
