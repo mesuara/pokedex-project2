@@ -107,7 +107,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/778.json")
         data.stats[5].base_stat,
         data.stats[4].base_stat,
         data.stats[3].base_stat,
-        data.abilities[0].ability.name + ", " + data.abilities[1].ability.name
+        data.abilities[0].ability.name 
     )
 
 
