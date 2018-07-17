@@ -23,38 +23,14 @@ class Trainer {
     }
     get(name) {
         for (let i = 0; i < this.all.length; i++) {
-            if (name === this.all[i].name) {
-                return this.all[i]
+            if (name === this.pokemons[i].name) {
+                return this.pokemons[i]
             }
         }
     }
 }
 
-// axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/12.json").then((response) => {
-//     console.log(response.data)
-//   })
 
-
-//   .catch(function (error) {
-//     // handle error
-//     alert('HEY THIS API ISNT WORKING')
-//   })
-
-// let id = [12, 494, 778]
-
-
-// id.forEach((id)=> {
-//     axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/"+ id +".json").then((response) => {
-//     console.log(response.data)
-
-//   })
-
-
-//   .catch(function (error) {
-//     // handle error
-//     alert('HEY THIS API ISNT WORKING')
-//   })
-// })
 
 let mess = new Trainer('mess');
 
@@ -78,6 +54,14 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/12.json")
 
         mess.add(butterfree)
         console.log(butterfree)
+    }).then(() =>{
+        let p1 = document.createElement('p')
+        show.appendChild(p1)
+        p1.innerText = 'BUTTERFREE'
+        // p1.innerText = mess.all().map(x=>x.name).join();
+        let ima = document.createElement('img')
+        show.appendChild(ima)
+        ima.src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
     })
 
 
@@ -100,6 +84,13 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/494.json")
 
         mess.add(victini)
         console.log(victini)
+    }).then(() =>{
+        let p2 = document.createElement('p')
+        show.appendChild(p2)
+        p2.innerText = "VICTINI"
+        let imag = document.createElement('img')
+        show.appendChild(imag)
+        imag.src = mess.all().map(x=>x.image).join();
     })
 
 //mimikyu
@@ -121,7 +112,14 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/778.json")
 
         mess.add(mimikyu)
         console.log(mimikyu)
+    }).then(() =>{
+        show.innerText = mess.all().map(x=>x.name.toUpperCase()).join();
+        let im = document.createElement('img')
+        im.src = mess.all().map(x=>x.image).join();
+        show.appendChild(im)
     })
+        
+
 
 console.log(mess)
 
@@ -166,3 +164,9 @@ btnStart.addEventListener('click', (change) => {
     images.removeAttribute('class', 'anime')
     
 })
+
+let show = document.getElementById('show')
+
+ 
+
+
