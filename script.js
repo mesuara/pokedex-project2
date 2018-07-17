@@ -143,13 +143,13 @@ let i = 0;
 btnStart.addEventListener('click', (change) => {
     if (i < 3) {
         //    images.src = nextItem();
-        pokeName.innerText = mess.pokemons[i].name
-        hp.innerText = "HP" + mess.pokemons[i].hp
-        attack.innerText = "Atack" + mess.pokemons[i].attack
-        denfense.innerText = "Defense" + mess.pokemons[i].defense
-        ability.innerText = "Ability" + mess.pokemons[i].defense
+        pokeName.innerText = `${mess.pokemons[i].name.toUpperCase()}`
+        hp.innerText = `HP ${mess.pokemons[i].hp}`
+        attack.innerText = `Atack ${mess.pokemons[i].attack}`
+        denfense.innerText = `Defense ${mess.pokemons[i].defense}`
+        ability.innerText = `Ability ${mess.pokemons[i].ability}`
         images.src = mess.pokemons[i].image
-
+        btnStart.innerText = 'next'
         i++;
     }
     else {
@@ -159,5 +159,10 @@ btnStart.addEventListener('click', (change) => {
         denfense.innerText = ''
         ability.innerText = ''
         images.src = 'https://cdn.weasyl.com/static/media/ed/6d/7e/ed6d7e9d82c5e0be06441b9e427d8ffe4b056b0479d7f8975f671ebcd678ea97.png'
+        btnStart.innerText = 'GameOver'
+        document.getElementById('mainImg').style.background = "url('http://bestanimations.com/Electronics/animated-tv-static-fuzz.gif')"
+        document.getElementById('text').style.background = "url('http://bestanimations.com/Electronics/animated-tv-static-fuzz.gif')"
     }
+    images.removeAttribute('class', 'anime')
+    
 })

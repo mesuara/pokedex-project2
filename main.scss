@@ -1,12 +1,8 @@
-// body{
-//     width: 900px;
-//     margin: auto;
-//     margin-top: 100px;
-//   }
   #main.container{
     display: flex;
     flex-direction: row;
     margin-top: 100px;
+    font-family: 'Roboto Mono', monospace;
   }
 
 #mainbox{
@@ -48,7 +44,7 @@
   }
 
   img{
-    width: 250px;
+    width: 350px;
     height: 280px;
   }
   #mainImg{
@@ -98,6 +94,9 @@
     border-radius: 10px;
     margin-top: 60px;
     margin-left: 100px;
+    text-align: center;
+    font-size: 30px;
+    
    }
 
    #secondbox{
@@ -113,12 +112,14 @@
         border: 3px solid black;
         width: 360px;
         height: 300px;
-        margin-left: 30px;
-        margin-top: 110px;
+        margin-left: 70px;
+        margin-top: 10px;
         background-color: aquamarine;
         border-radius: 10px;
         border-bottom-right-radius: 70px 90px; 
-      }
+        
+      } 
+         
       #showAll{
         background-color: green;
        width: 150px;
@@ -127,5 +128,33 @@
        margin-top: 110px;
        margin-left: 200px;
       }
+}
+  
+#pokelogo{
+    height: 100px;
+    width: 400px;
+    margin-left: 60px;
+}
+
+@keyframes ballMoving{
+    0%{
+      transform: rotate(0deg)
+    }
+   
+    100%{
+      transform: rotate(360deg)
+    }
+  }
+
+  #img.anime{
+    animation: ballMoving 1s infinite;
+  }
+  
+  #pokemon{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    list-style: none;
+    margin-top: 50px;
+    
 }
   
