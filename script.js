@@ -54,14 +54,14 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/12.json")
 
         mess.add(butterfree)
         console.log(butterfree)
-    }).then(() =>{
+    }).then(() => {
         let p1 = document.createElement('p')
         show.appendChild(p1)
         p1.innerText = 'BUTTERFREE'
         // p1.innerText = mess.all().map(x=>x.name).join();
         let ima = document.createElement('img')
         show.appendChild(ima)
-        ima.src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+        ima.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
     })
 
 
@@ -84,13 +84,13 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/494.json")
 
         mess.add(victini)
         console.log(victini)
-    }).then(() =>{
+    }).then(() => {
         let p2 = document.createElement('p')
         show.appendChild(p2)
         p2.innerText = "VICTINI"
         let imag = document.createElement('img')
         show.appendChild(imag)
-        imag.src = mess.all().map(x=>x.image).join();
+        imag.src = mess.all().map(x => x.image).join();
     })
 
 //mimikyu
@@ -112,13 +112,13 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/778.json")
 
         mess.add(mimikyu)
         console.log(mimikyu)
-    }).then(() =>{
-        show.innerText = mess.all().map(x=>x.name.toUpperCase()).join();
+    }).then(() => {
+        show.innerText = mess.all().map(x => x.name.toUpperCase()).join();
         let im = document.createElement('img')
-        im.src = mess.all().map(x=>x.image).join();
+        im.src = mess.all().map(x => x.image).join();
         show.appendChild(im)
     })
-        
+
 
 
 console.log(mess)
@@ -141,12 +141,19 @@ let i = 0;
 btnStart.addEventListener('click', (change) => {
     if (i < 3) {
         //    images.src = nextItem();
+        // document.getElementById('pokemon').setAttribute('class', "animated 3s slideInLeft")
         pokeName.innerText = `${mess.pokemons[i].name.toUpperCase()}`
+        pokeName.setAttribute('class', "animated 3s slideInLeft" )
         hp.innerText = `HP ${mess.pokemons[i].hp}`
+        hp.setAttribute('class', "animated 3s slideInLeft" )
         attack.innerText = `Atack ${mess.pokemons[i].attack}`
+        attack.setAttribute('class', "animated 3s slideInLeft" )
         denfense.innerText = `Defense ${mess.pokemons[i].defense}`
+        defense.setAttribute('class', "animated 3s slideInLeft" )
         ability.innerText = `Ability ${mess.pokemons[i].ability}`
+        ability.setAttribute('class', "animated 3s slideInLeft" )
         images.src = mess.pokemons[i].image
+        images.setAttribute('class', "animated 3s slideInLeft" )
         btnStart.innerText = 'next'
         i++;
     }
@@ -163,11 +170,11 @@ btnStart.addEventListener('click', (change) => {
     }
     images.removeAttribute('class', 'anime')
     btnStart.removeAttribute('class', 'animated')
-    
+
 })
 
 let show = document.getElementById('show')
 
- 
+
 
 
