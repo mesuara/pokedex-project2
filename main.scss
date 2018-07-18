@@ -1,3 +1,11 @@
+ 
+ $radius: 35px;
+ $lightBlue: aquamarine;
+ @mixin boxShadow ($px){
+     box-shadow: $px $px $px $px #888888;
+ }
+ 
+ 
  body{
      background-image: url('back.png');
  }
@@ -12,9 +20,10 @@
     height: 700px;
     width: 500px;
     background-color: red;
-    border-top-left-radius:35px;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius:35px; 
+    border-top-left-radius:$radius;
+    border-top-right-radius: $radius;
+    border-bottom-right-radius:$radius; 
+    @include boxShadow(10px);
     #nav{
         display: flex;
         justify-content: space-around;
@@ -24,9 +33,10 @@
       #big-dot{
   
         border-radius: 50%;
-        background-color: aqua;
+        background-color: $lightBlue;
         height: 60px;
         width: 60px;
+        @include boxShadow(1px);
       }
       .dot{
   
@@ -34,13 +44,16 @@
         height: 25px;
         width: 25px;
         border-radius: 50%;
+        @include boxShadow(1px)
       }
       
       .dot.two{
+          @include boxShadow(1px);
         background-color: orange;
       }
       .dot.three{
         background-color: greenyellow;
+        @include boxShadow(1px)
       }
        
     
@@ -58,7 +71,7 @@
     height: 300px;
     margin-left: 60px;
     margin-top: 10px;
-    background-color: aquamarine;
+    background-color: $lightBlue;
     border-radius: 10px;
     border-bottom-left-radius: 70px 90px; 
   }
@@ -120,9 +133,10 @@
     height: 700px;
     width: 500px;
     background-color: red;
-    border-top-left-radius:35px;
-    border-top-right-radius: 35px;
-    border-bottom-left-radius: 35px;
+    border-top-left-radius:$radius;
+    border-top-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+    @include boxShadow(10px);
     #text{
         display: flex;
         justify-content: space-around;
@@ -131,7 +145,7 @@
         height: 300px;
         margin-left: 70px;
         margin-top: 10px;
-        background-color: aquamarine;
+        background-color: $lightBlue;
         border-radius: 10px;
         border-bottom-right-radius: 70px 90px; 
         
