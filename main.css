@@ -1,5 +1,5 @@
 body {
-  background-color: #8FC93A; }
+  background-image: url("back.png"); }
 
 #main.container {
   display: flex;
@@ -79,7 +79,8 @@ img {
   margin-top: 60px;
   margin-left: 100px;
   text-align: center;
-  font-size: 30px; }
+  font-size: 30px;
+  color: white; }
 
 #secondbox {
   height: 700px;
@@ -105,7 +106,10 @@ img {
     height: 60px;
     border-radius: 10px;
     margin-top: 110px;
-    margin-left: 200px; }
+    margin-left: 200px;
+    font-size: 30px;
+    color: white;
+    text-align: center; }
 
 #pokelogo {
   height: 100px;
