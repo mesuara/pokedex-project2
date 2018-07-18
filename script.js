@@ -153,11 +153,12 @@ btnStart.addEventListener('click', (change) => {
         ability.innerText = `Ability ${mess.pokemons[i].ability}`
       
         images.src = mess.pokemons[i].image
-        
+        document.getElementById('mainImg').setAttribute('class', 'animated 2s zoomIn')
         btnStart.innerText = 'next'
         i++;
         setTimeout(()=> {
             document.getElementById('pokemon').removeAttribute('class', "animated 3s slideInLeft" )
+            document.getElementById('mainImg').removeAttribute('class', 'animated 2s zoomIn')
         },1000) 
     }
     else {
@@ -176,7 +177,7 @@ btnStart.addEventListener('click', (change) => {
         text.innerText = 'Reset'
         newBtn.appendChild(text)
         btnStart.appendChild(newBtn)
-
+        
         newBtn.addEventListener('click', (e)=>{
             window.location.reload()
         })
