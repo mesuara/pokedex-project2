@@ -141,21 +141,24 @@ let i = 0;
 btnStart.addEventListener('click', (change) => {
     if (i < 3) {
         //    images.src = nextItem();
-        // document.getElementById('pokemon').setAttribute('class', "animated 3s slideInLeft")
+        document.getElementById('pokemon').setAttribute('class', "animated 3s slideInLeft")
         pokeName.innerText = `${mess.pokemons[i].name.toUpperCase()}`
-        pokeName.setAttribute('class', "animated 3s slideInLeft" )
+        
         hp.innerText = `HP ${mess.pokemons[i].hp}`
-        hp.setAttribute('class', "animated 3s slideInLeft" )
+        
         attack.innerText = `Atack ${mess.pokemons[i].attack}`
-        attack.setAttribute('class', "animated 3s slideInLeft" )
+   
         denfense.innerText = `Defense ${mess.pokemons[i].defense}`
-        defense.setAttribute('class', "animated 3s slideInLeft" )
+       
         ability.innerText = `Ability ${mess.pokemons[i].ability}`
-        ability.setAttribute('class', "animated 3s slideInLeft" )
+      
         images.src = mess.pokemons[i].image
-        images.setAttribute('class', "animated 3s slideInLeft" )
+        
         btnStart.innerText = 'next'
         i++;
+        setTimeout(()=> {
+            document.getElementById('pokemon').removeAttribute('class', "animated 3s slideInLeft" )
+        },1000) 
     }
     else {
         pokeName.innerText = ''
@@ -167,10 +170,22 @@ btnStart.addEventListener('click', (change) => {
         btnStart.innerText = 'GameOver'
         document.getElementById('mainImg').style.background = "url('http://bestanimations.com/Electronics/animated-tv-static-fuzz.gif')"
         document.getElementById('text').style.background = "url('http://bestanimations.com/Electronics/animated-tv-static-fuzz.gif')"
+        let newBtn = document.createElement('button')
+        newBtn.setAttribute('id', 'resetBtn')
+        let text = document.createElement('p')
+        text.innerText = 'Reset'
+        newBtn.appendChild(text)
+        btnStart.appendChild(newBtn)
+
+        newBtn.addEventListener('click', (e)=>{
+            window.location.reload()
+        })
     }
+   
     images.removeAttribute('class', 'anime')
     btnStart.removeAttribute('class', 'animated')
-
+   
+    
 })
 
 let show = document.getElementById('show')
