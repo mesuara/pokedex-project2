@@ -81,6 +81,8 @@ img {
   text-align: center;
   font-size: 30px;
   color: white; }
+  #btnStart #start {
+    animation-duration: 4s; }
 
 #secondbox {
   height: 700px;

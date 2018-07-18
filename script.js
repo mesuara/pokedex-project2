@@ -162,6 +162,7 @@ btnStart.addEventListener('click', (change) => {
         document.getElementById('text').style.background = "url('http://bestanimations.com/Electronics/animated-tv-static-fuzz.gif')"
     }
     images.removeAttribute('class', 'anime')
+    btnStart.removeAttribute('class', 'animated')
     
 })
 
