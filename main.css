@@ -85,7 +85,8 @@ img {
   color: white;
   text-align: center;
   margin-top: 60px;
-  margin-left: 100px; }
+  margin-left: 100px;
+  cursor: pointer; }
   #btnStart #start {
     animation-duration: 4s; }
   #btnStart #resetBtn {

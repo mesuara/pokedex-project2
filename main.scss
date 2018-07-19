@@ -32,6 +32,7 @@
     border-top-right-radius: $radius;
     border-bottom-right-radius:$radius; 
     @include boxShadow(10px);
+    
     #nav{
         display: flex;
         justify-content: space-around;
@@ -115,7 +116,7 @@
    @include button();
     margin-top: 60px;
     margin-left: 100px;
-   
+    cursor: pointer;
     #start{
         animation-duration: 4s;
     }
