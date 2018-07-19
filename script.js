@@ -155,6 +155,13 @@ btnStart.addEventListener('click', (change) => {
         images.src = mess.pokemons[i].image
         document.getElementById('mainImg').setAttribute('class', 'animated 2s zoomIn')
         btnStart.innerText = 'next'
+        let prev = document.createElement('button')
+        prev.innerText = 'prev'
+        prev.setAttribute('id', 'prevBtn')
+        btnStart.appendChild(prev)
+        prev.addEventListener('click', ()=>{
+            i = i-2;
+        })
         i++;
         setTimeout(()=> {
             document.getElementById('pokemon').removeAttribute('class', "animated 3s slideInLeft" )
