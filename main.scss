@@ -4,7 +4,9 @@
  @mixin boxShadow ($px){
      box-shadow: $px $px $px $px #888888;
  }
- 
+ @mixin button() {
+     
+ }
  
  body{
      background-image: url('back.png');
