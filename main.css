@@ -154,4 +154,10 @@ img {
   list-style: none;
   margin-top: 50px; }
 
+#show {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
