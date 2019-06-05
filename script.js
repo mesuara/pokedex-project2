@@ -98,6 +98,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/778/")
     .then((response) => {
         console.log(response.data)
 
+        
         let data = response.data
 
         let mimikyu = new Pokemon(
