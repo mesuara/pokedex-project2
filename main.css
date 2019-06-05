@@ -1,11 +1,18 @@
 body {
-  background-image: url("back.png"); }
+  background-image: url("back.png");
+}
 
 #main.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 100px;
-  font-family: 'Roboto Mono', monospace; }
+  font-family: 'Roboto Mono', monospace;
+}
 
 #mainbox {
   height: 700px;
@@ -14,37 +21,60 @@ body {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
-  box-shadow: 10px 10px 10px 10px #888888; }
-  #mainbox #nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px; }
-  #mainbox #big-dot {
-    border-radius: 50%;
-    background-color: aquamarine;
-    height: 60px;
-    width: 60px;
-    box-shadow: 1px 1px 1px 1px #888888; }
-  #mainbox .dot {
-    background-color: pink;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 1px 1px #888888; }
-  #mainbox .dot.two {
-    box-shadow: 1px 1px 1px 1px #888888;
-    background-color: orange; }
-  #mainbox .dot.three {
-    background-color: greenyellow;
-    box-shadow: 1px 1px 1px 1px #888888; }
+  -webkit-box-shadow: 10px 10px 10px 10px #888888;
+          box-shadow: 10px 10px 10px 10px #888888;
+}
+
+#mainbox #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+
+#mainbox #big-dot {
+  border-radius: 50%;
+  background-color: aquamarine;
+  height: 60px;
+  width: 60px;
+  -webkit-box-shadow: 1px 1px 1px 1px #888888;
+          box-shadow: 1px 1px 1px 1px #888888;
+}
+
+#mainbox .dot {
+  background-color: pink;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 1px 1px #888888;
+          box-shadow: 1px 1px 1px 1px #888888;
+}
+
+#mainbox .dot.two {
+  -webkit-box-shadow: 1px 1px 1px 1px #888888;
+          box-shadow: 1px 1px 1px 1px #888888;
+  background-color: orange;
+}
+
+#mainbox .dot.three {
+  background-color: greenyellow;
+  -webkit-box-shadow: 1px 1px 1px 1px #888888;
+          box-shadow: 1px 1px 1px 1px #888888;
+}
 
 img {
   width: 350px;
-  height: 280px; }
+  height: 280px;
+}
 
 #mainImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border: 3px solid black;
   width: 360px;
   height: 300px;
@@ -52,29 +82,45 @@ img {
   margin-top: 10px;
   background-color: aquamarine;
   border-radius: 10px;
-  border-bottom-left-radius: 70px 90px; }
+  border-bottom-left-radius: 70px 90px;
+}
+
+#img{
+  margin-top: 80px;
+  height: 40%;
+  width: 40%;
+}
 
 #btn {
-  display: flex; }
-  #btn #btnBlack {
-    border-radius: 50%;
-    background-color: black;
-    height: 40px;
-    width: 40px;
-    margin-left: 50px;
-    margin-top: 10px; }
-  #btn #btnYellow {
-    background-color: yellow;
-    width: 70px;
-    height: 20px;
-    border-radius: 20px;
-    margin-left: 60px; }
-  #btn #btnPink {
-    background-color: pink;
-    width: 70px;
-    height: 20px;
-    border-radius: 20px;
-    margin-left: 80px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#btn #btnBlack {
+  border-radius: 50%;
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+#btn #btnYellow {
+  background-color: yellow;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: 60px;
+}
+
+#btn #btnPink {
+  background-color: pink;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: 80px;
+}
 
 #btnStart {
   background-color: green;
@@ -86,27 +132,35 @@ img {
   text-align: center;
   margin-top: 60px;
   margin-left: 100px;
-  cursor: pointer; }
-  #btnStart #start {
-    animation-duration: 4s; }
-  #btnStart #resetBtn {
-    background-color: green;
-    width: 150px;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-top: 30px; }
-  #btnStart #prevBtn {
-    background-color: green;
-    width: 150px;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-top: 30px; }
+  cursor: pointer;
+}
+
+#btnStart #start {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#btnStart #resetBtn {
+  background-color: green;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#btnStart #prevBtn {
+  background-color: green;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
 
 #secondbox {
   height: 700px;
@@ -115,52 +169,82 @@ img {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   border-bottom-left-radius: 35px;
-  box-shadow: 10px 10px 10px 10px #888888; }
-  #secondbox #text {
-    display: flex;
-    justify-content: space-around;
-    border: 3px solid black;
-    width: 360px;
-    height: 300px;
-    margin-left: 70px;
-    margin-top: 10px;
-    background-color: aquamarine;
-    border-radius: 10px;
-    border-bottom-right-radius: 70px 90px; }
-  #secondbox #showAll {
-    background-color: green;
-    width: 150px;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-top: 110px;
-    margin-left: 200px; }
+  -webkit-box-shadow: 10px 10px 10px 10px #888888;
+          box-shadow: 10px 10px 10px 10px #888888;
+}
+
+#secondbox #text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 3px solid black;
+  width: 360px;
+  height: 300px;
+  margin-left: 70px;
+  margin-top: 10px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  border-bottom-right-radius: 70px 90px;
+}
+
+#secondbox #showAll {
+  background-color: green;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 110px;
+  margin-left: 200px;
+}
 
 #pokelogo {
   height: 100px;
   width: 400px;
-  margin-left: 60px; }
+  margin-left: 60px;
+}
+
+@-webkit-keyframes ballMoving {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 
 @keyframes ballMoving {
   0% {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(360deg); } }
-#img.anime {
-  animation: ballMoving 3s infinite; }
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.anime {
+  -webkit-animation: ballMoving 3s infinite;
+          animation: ballMoving 3s infinite;
+}
 
 #pokemon {
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   list-style: none;
-  margin-top: 50px; }
+  margin-top: 50px;
+}
 
 #show {
   background-color: green;
   color: white;
   font-size: 20px;
-  text-align: center; }
-
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

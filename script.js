@@ -36,7 +36,7 @@ let mess = new Trainer('mess');
 
 
 //butterfree
-axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/12.json")
+axios.get("https://pokeapi.co/api/v2/pokemon/12/")
     .then((response) => {
 
 
@@ -66,7 +66,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/12.json")
 
 
 //victini
-axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/494.json")
+axios.get("https://pokeapi.co/api/v2/pokemon/494/")
     .then((response) => {
 
         console.log(response.data)
@@ -94,7 +94,7 @@ axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/494.json")
     })
 
 //mimikyu
-axios.get("https://pokeapi-nycda.firebaseio.com/pokemon/778.json")
+axios.get("https://pokeapi.co/api/v2/pokemon/778/")
     .then((response) => {
         console.log(response.data)
 
